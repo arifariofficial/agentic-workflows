@@ -27,6 +27,7 @@ network:
   allowed:
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 engine:
   id: copilot
   copilot-sdk: true
@@ -42,6 +43,7 @@ Use web-fetch to read these official sources:
 
 - https://github.blog/latest/
 - https://github.blog/changelog/
+- https://awesome-copilot.github.com/workflows/
 
 Update only `site/content/github-info.md` with concise, practical information
 that helps developers learn GitHub faster. Preserve the existing structure and
