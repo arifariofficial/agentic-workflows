@@ -19,7 +19,8 @@ safe-outputs:
       - site/content/github-info.md
 tools:
   edit:
-  web-fetch:
+  bash:
+    - "curl *"
   github:
     mode: gh-proxy
     toolsets:
@@ -31,17 +32,18 @@ network:
     - awesome-copilot.github.com
 engine:
   id: copilot
-  model: gpt-5.6-luna
-  copilot-sdk: true
+  model: gpt-4.1
+  copilot-sdk: false
 ---
 
 # Update Mona's GitHub Info website
 
 Read `notes/mona-notes.md` before making any changes. Use the GitHub repository
 API tools to read repository guidance or reference files instead of terminal,
-CLI, or sandboxed commands.
+CLI, or sandboxed commands. The only shell command you may run is `curl`, and
+only to fetch the sources below.
 
-Use web-fetch to read these official sources:
+Use `curl -sL <url>` to read these official sources:
 
 - https://github.blog/latest/
 - https://github.blog/changelog/
