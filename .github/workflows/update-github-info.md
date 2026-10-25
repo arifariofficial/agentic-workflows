@@ -31,6 +31,7 @@ network:
     - awesome-copilot.github.com
 engine:
   id: copilot
+  model: claude-sonnet-4.6
   copilot-sdk: true
 ---
 
